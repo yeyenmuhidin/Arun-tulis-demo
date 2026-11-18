@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aruna Tulis — Concept demo oleh Yeyen Muhidin</title>
+  <meta name="description" content="Concept demo mandiri: situs satu halaman untuk sanggar batik tulis fiktif di Pati. Karya Yeyen Muhidin, web designer dari Pati, Jawa Tengah. Bukan bisnis sungguhan.">
+  <meta name="author" content="Yeyen Muhidin">
+  <meta name="color-scheme" content="light">
+  <meta name="theme-color" content="#1c2140">
+  <meta property="og:title" content="Aruna Tulis — Concept demo oleh Yeyen Muhidin">
+  <meta property="og:description" content="Contoh situs modern untuk sanggar batik tulis fiktif di Pati. Bukan bisnis sungguhan.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="hero.jpg">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="fraunces.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="hero-1280.webp" as="image" type="image/webp" imagesrcset="hero-640.webp 640w, hero-960.webp 960w, hero-1280.webp 1280w" imagesizes="(min-width: 64rem) 58vw, 100vw" fetchpriority="high">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#utama">Lewati ke konten</a>
+
+  <p class="demo-banner">
+    Ini concept demo mandiri, bukan bisnis sungguhan.
+    Contoh situs karya <strong>Yeyen Muhidin</strong>, web designer dari Pati.
+  </p>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="site-logo" href="#beranda">
+        <svg viewBox="0 0 32 32" width="32" height="32" aria-hidden="true" focusable="false">
+          <rect width="32" height="32" rx="6" fill="currentColor"/>
+          <g fill="none" stroke="var(--bg)" stroke-width="1.4" stroke-linejoin="round">
+            <path d="M16 6.5c2.6 2.6 4.2 5.4 4.2 7.6 0 2.4-1.9 4.3-4.2 4.3S11.8 16.5 11.8 14.1c0-2.2 1.6-5 4.2-7.6Z"/>
+            <path d="M16 25.5c-2.6-2.6-4.2-5.4-4.2-7.6 0-2.4 1.9-4.3 4.2-4.3s4.2 1.9 4.2 4.3c0 2.2-1.6 5-4.2 7.6Z"/>
+            <path d="M6.5 16c2.6-2.6 5.4-4.2 7.6-4.2 2.4 0 4.3 1.9 4.3 4.2s-1.9 4.2-4.3 4.2c-2.2 0-5-1.6-7.6-4.2Z"/>
+            <path d="M25.5 16c-2.6 2.6-5.4 4.2-7.6 4.2-2.4 0-4.3-1.9-4.3-4.2s1.9-4.2 4.3-4.2c2.2 0 5 1.6 7.6 4.2Z"/>
+          </g>
+          <circle cx="16" cy="16" r="1.6" fill="var(--wax)"/>
+        </svg>
+        Aruna Tulis
+      </a>
+
+      <nav class="site-nav" aria-label="Utama">
+        <button
+          class="menu-button"
+          type="button"
+          popovertarget="site-menu"
+          popovertargetaction="toggle"
+          aria-controls="site-menu"
+        >
+          <svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true" focusable="false">
+            <path fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" d="M2.5 4h11M2.5 8h11M2.5 12h11"/>
+          </svg>
+          <span>Menu</span>
+        </button>
+
+        <ul id="site-menu" class="site-menu" popover="auto">
+          <li><a href="#cerita">Cerita</a></li>
+          <li><a href="#proses">Proses</a></li>
+          <li><a href="#koleksi">Koleksi</a></li>
+          <li><a href="#kunjungi">Kunjungi</a></li>
+          <li><a href="#kontak">Kontak</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="utama">
+    <section class="hero" id="beranda" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow">Sanggar batik tulis kontemporer · Pati</p>
+        <h1 id="hero-title">Kain yang digores pelan, sebelum warna datang.</h1>
+        <p class="lead">Aruna Tulis adalah konsep sanggar batik tulis di Pati, Jawa Tengah. Setiap kain disusun dengan canting, malam, dan pewarna yang dipilih pelan — untuk busana, interior, dan kain yang dipakai lama.</p>
+        <div class="hero-actions">
+          <a class="btn" href="#proses">Lihat proses</a>
+          <button
+            class="btn btn-ghost"
+            type="button"
+            commandfor="contact-dialog"
+            command="show-modal"
+            data-open-dialog="contact-dialog"
+          >
+            Buka formulir contoh
+          </button>
+        </div>
+      </div>
+      <div class="hero-media">
+        <picture>
+          <source
+            type="image/avif"
+            srcset="hero-640.avif 640w, hero-960.avif 960w, hero-1280.avif 1280w"
+            sizes="(min-width: 64rem) 58vw, 100vw"
+          >
+          <source
+            type="image/webp"
+            srcset="hero-640.webp 640w, hero-960.webp 960w, hero-1280.webp 1280w"
+            sizes="(min-width: 64rem) 58vw, 100vw"
+          >
+          <img
+            src="hero.jpg"
+            width="1280"
+            height="720"
+            alt="Tangan perajin menuliskan malam hangat dengan canting pada kain mori di atas meja kayu, dengan kain indigo menggantung di latar."
+            fetchpriority="high"
+            decoding="async"
+          >
+        </picture>
+      </div>
+    </section>
+
+    <section class="section" id="cerita" aria-labelledby="cerita-title">
+      <div class="wrap">
+        <div class="cerita-grid reveal">
+          <header class="section-head">
+            <p class="kicker">01 — Cerita</p>
+            <h2 id="cerita-title">Sebuah sanggar imajiner di tepi sawah Pati.</h2>
+          </header>
+          <div class="cerita-copy">
+            <p>Di Pati, pagi sering datang bersama cahaya yang jatuh miring ke meja kayu. Di atas kain mori yang masih polos, garis ditulis satu per satu. Tidak ada mesin yang menggantikan canting; yang ada hanya tangan, malam, dan waktu.</p>
+            <p>Aruna Tulis tidak meniru motif lama secara utuh. Kawung, parang, atau flora Jawa menjadi titik berangkat, lalu disusun ulang menjadi komposisi yang lebih sunyi: lebih banyak napas, lebih sedikit ramai. Hasilnya dimaksudkan untuk dipakai, bukan hanya dipajang.</p>
+            <p>Laman ini adalah latihan desain untuk usaha lokal — sebuah concept demo, bukan profil sanggar yang sedang buka.</p>
+          </div>
+        </div>
+
+        <figure class="studio-figure reveal">
+          <picture>
+            <source
+              type="image/avif"
+              srcset="studio-640.avif 640w, studio-960.avif 960w, studio-1152.avif 1152w"
+              sizes="(min-width: 72rem) 72rem, calc(100vw - 3rem)"
+            >
+            <source
+              type="image/webp"
+              srcset="studio-640.webp 640w, studio-960.webp 960w, studio-1152.webp 1152w"
+              sizes="(min-width: 72rem) 72rem, calc(100vw - 3rem)"
+            >
+            <img
+              src="studio.jpg"
+              width="1152"
+              height="864"
+              alt="Meja kayu di studio batik dengan tumpukan kain indigo, terracotta, dan krem, mangkuk pewarna, serta kain jadi yang digantung di dinding, dengan sawah terlihat melalui jendela."
+              loading="lazy"
+              decoding="async"
+            >
+          </picture>
+          <figcaption>Suasana studio konsep: kain dilipat, alat disusun, dan jendela menghadap hijau. Gambar dibuat khusus untuk demo ini.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section" id="proses" aria-labelledby="proses-title">
+      <div class="wrap">
+        <header class="section-head reveal">
+          <p class="kicker">02 — Proses</p>
+          <h2 id="proses-title">Empat langkah, masih dikerjakan dengan tangan.</h2>
+          <p class="intro">Urutan ini mengikuti cara kerja batik tulis pada umumnya, disusun sebagai contoh struktur halaman, bukan janji produksi.</p>
+        </header>
+
+        <ol class="proses-list">
+          <li class="langkah reveal">
+            <span class="langkah-no" aria-hidden="true">01</span>
+            <h3>Menyusun motif</h3>
+            <p>Pola diuji di kertas dan di kain kecil. Beberapa garis dibuang lagi sampai komposisinya terasa longgar, tidak sesak.</p>
+          </li>
+          <li class="langkah has-media reveal">
+            <picture>
+              <source
+                type="image/avif"
+                srcset="proses-malam-480.avif 480w, proses-malam-800.avif 800w, proses-malam-1024.avif 1024w"
+                sizes="(min-width: 64rem) 16vw, (min-width: 40rem) 30vw, 100vw"
+              >
+              <source
+                type="image/webp"
+                srcset="proses-malam-480.webp 480w, proses-malam-800.webp 800w, proses-malam-1024.webp 1024w"
+                sizes="(min-width: 64rem) 16vw, (min-width: 40rem) 30vw, 100vw"
+              >
+              <img
+                src="proses-malam.jpg"
+                width="1024"
+                height="1024"
+                alt="Mangkuk tanah berisi malam batik yang meleleh, di samping alat tembaga dan sehelai kain krem di atas meja jati."
+                loading="lazy"
+                decoding="async"
+              >
+            </picture>
+            <span class="langkah-no" aria-hidden="true">02</span>
+            <h3>Menulis malam</h3>
+            <p>Malam dipanaskan, lalu dituliskan sebagai penahan warna. Garis yang sedikit goyah dibiarkan, karena itu jejak tangan.</p>
+          </li>
+          <li class="langkah has-media reveal">
+            <picture>
+              <source
+                type="image/avif"
+                srcset="proses-celup-480.avif 480w, proses-celup-800.avif 800w, proses-celup-1024.avif 1024w"
+                sizes="(min-width: 64rem) 16vw, (min-width: 40rem) 30vw, 100vw"
+              >
+              <source
+                type="image/webp"
+                srcset="proses-celup-480.webp 480w, proses-celup-800.webp 800w, proses-celup-1024.webp 1024w"
+                sizes="(min-width: 64rem) 16vw, (min-width: 40rem) 30vw, 100vw"
+              >
+              <img
+                src="proses-celup.jpg"
+                width="1024"
+                height="1024"
+                alt="Kain krem tercelup sebagian ke dalam bak pewarna indigo, berubah biru di garis air."
+                loading="lazy"
+                decoding="async"
+              >
+            </picture>
+            <span class="langkah-no" aria-hidden="true">03</span>
+            <h3>Mencelup warna</h3>
+            <p>Indigo, tanah, atau soga. Kain masuk, diangkat, diangin-anginkan, lalu kadang dicelup lagi sampai nadanya tenang.</p>
+          </li>
+          <li class="langkah reveal">
+            <span class="langkah-no" aria-hidden="true">04</span>
+            <h3>Melorod dan merapikan</h3>
+            <p>Malam dilepas dengan air panas. Kain dicuci, dijemur, lalu dilipat atau dijahit sesuai keperluan — busana atau interior.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section" id="koleksi" aria-labelledby="koleksi-title">
+      <div class="wrap">
+        <header class="section-head reveal">
+          <p class="kicker">03 — Koleksi konsep</p>
+          <h2 id="koleksi-title">Tiga kain, tiga napas yang berbeda.</h2>
+          <p class="intro">Nama dan gambar di bawah ini dibuat untuk demo, bukan katalog penjualan. Tidak ada stok, harga, atau ulasan.</p>
+        </header>
+
+        <ul class="koleksi-grid">
+          <li>
+            <figure class="kain reveal">
+              <picture>
+                <source
+                  type="image/avif"
+                  srcset="kain-indigo-480.avif 480w, kain-indigo-800.avif 800w, kain-indigo-864.avif 864w"
+                  sizes="(min-width: 56rem) 34vw, (min-width: 36rem) 48vw, 100vw"
+                >
+                <source
+                  type="image/webp"
+                  srcset="kain-indigo-480.webp 480w, kain-indigo-800.webp 800w, kain-indigo-864.webp 864w"
+                  sizes="(min-width: 56rem) 34vw, (min-width: 36rem) 48vw, 100vw"
+                >
+                <img
+                  src="kain-indigo.jpg"
+                  width="864"
+                  height="1152"
+                  alt="Close-up kain batik berlatar indigo dengan garis organik berwarna krem keemasan, menampilkan retakan malam yang halus."
+                  loading="lazy"
+                  decoding="async"
+                >
+              </picture>
+              <figcaption>
+                <h3>Alur Indigo</h3>
+                <p>Latar nila dengan garis yang mengalir seperti sungai kecil. Banyak retak halus dari malam yang pecah saat pewarnaan.</p>
+              </figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure class="kain reveal">
+              <picture>
+                <source
+                  type="image/avif"
+                  srcset="kain-terracotta-480.avif 480w, kain-terracotta-800.avif 800w, kain-terracotta-864.avif 864w"
+                  sizes="(min-width: 56rem) 26vw, (min-width: 36rem) 48vw, 100vw"
+                >
+                <source
+                  type="image/webp"
+                  srcset="kain-terracotta-480.webp 480w, kain-terracotta-800.webp 800w, kain-terracotta-864.webp 864w"
+                  sizes="(min-width: 56rem) 26vw, (min-width: 36rem) 48vw, 100vw"
+                >
+                <img
+                  src="kain-terracotta.jpg"
+                  width="864"
+                  height="1152"
+                  alt="Close-up kain batik berwarna terracotta dan krim dengan motif lingkaran dan daun yang digores tangan."
+                  loading="lazy"
+                  decoding="async"
+                >
+              </picture>
+              <figcaption>
+                <h3>Biji Tanah</h3>
+                <p>Warna terracotta di atas kain krem. Motif biji, daun, dan lingkaran disusun longgar, tidak simetris sempurna.</p>
+              </figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure class="kain reveal">
+              <picture>
+                <source
+                  type="image/avif"
+                  srcset="kain-senja-480.avif 480w, kain-senja-800.avif 800w, kain-senja-864.avif 864w"
+                  sizes="(min-width: 56rem) 26vw, (min-width: 36rem) 48vw, 100vw"
+                >
+                <source
+                  type="image/webp"
+                  srcset="kain-senja-480.webp 480w, kain-senja-800.webp 800w, kain-senja-864.webp 864w"
+                  sizes="(min-width: 56rem) 26vw, (min-width: 36rem) 48vw, 100vw"
+                >
+                <img
+                  src="kain-senja.jpg"
+                  width="864"
+                  height="1152"
+                  alt="Close-up kain berwarna pasir dengan sedikit goresan tipis berwarna indigo dan emas, banyak ruang kosong."
+                  loading="lazy"
+                  decoding="async"
+                >
+              </picture>
+              <figcaption>
+                <h3>Senja Tipis</h3>
+                <p>Banyak ruang kosong. Hanya beberapa goresan indigo dan emas malam di kain berwarna pasir.</p>
+              </figcaption>
+            </figure>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" id="kunjungi" aria-labelledby="kunjungi-title">
+      <div class="wrap">
+        <div class="visit reveal">
+          <header class="section-head">
+            <p class="kicker">04 — Kunjungi</p>
+            <h2 id="kunjungi-title">Alamat ini fiktif, sebagai latihan tata letak usaha lokal.</h2>
+            <p>Kalau ini situs sungguhan, di sinilah peta, jam buka, dan cara membuat janji biasanya diletakkan. Untuk demo, datanya sengaja dibuat sebagai contoh.</p>
+          </header>
+          <dl class="visit-facts">
+            <div>
+              <dt>Lokasi contoh</dt>
+              <dd>Dusun Senja, Kabupaten Pati, Jawa Tengah</dd>
+            </div>
+            <div>
+              <dt>Waktu kunjung (contoh)</dt>
+              <dd>Selasa–Sabtu, dengan janji kunjung</dd>
+            </div>
+            <div>
+              <dt>Catatan</dt>
+              <dd>Tidak ada nomor telepon, ulasan, atau data pengunjung. Sanggar ini tidak nyata.</dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="kontak" aria-labelledby="kontak-title">
+      <div class="wrap">
+        <header class="section-head reveal">
+          <p class="kicker">05 — Kontak</p>
+          <h2 id="kontak-title">Formulirnya tampak nyata. Pesannya tidak terkirim.</h2>
+          <p class="intro">Bagian ini menunjukkan cara merancang tombol, dialog, dan formulir yang jelas. Jika Anda ingin situs seperti ini untuk usaha Anda, hubungi Yeyen Muhidin, web designer dari Pati.</p>
+          <div class="cta-row">
+            <button
+              class="btn btn-ink"
+              type="button"
+              commandfor="contact-dialog"
+              command="show-modal"
+              data-open-dialog="contact-dialog"
+            >
+              Lihat contoh formulir
+            </button>
+          </div>
+        </header>
+
+        <div class="faq reveal">
+          <details>
+            <summary>Apakah Aruna Tulis sanggar sungguhan?</summary>
+            <p>Tidak. Ini concept demo mandiri yang dibuat sebagai contoh karya portofolio. Tidak ada klien, testimoni, atau angka penjualan.</p>
+          </details>
+          <details>
+            <summary>Dari mana foto-foto di laman ini?</summary>
+            <p>Semua gambar dibuat khusus untuk demo ini. Bukan foto stok berlisensi pihak lain, dan bukan dokumentasi sanggar yang ada.</p>
+          </details>
+          <details>
+            <summary>Bolehkah laman ini dipakai di profil freelance?</summary>
+            <p>Ya, sebagai contoh karya Yeyen Muhidin, dengan catatan bahwa ini concept demo — bukan situs bisnis yang sedang berjalan.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <p class="credit">Concept demo by Yeyen Muhidin</p>
+      <p class="footer-meta">Web designer · Pati, Jawa Tengah · 2026</p>
+    </div>
+  </footer>
+
+  <dialog id="contact-dialog" closedby="any" aria-labelledby="dialog-title">
+    <div class="dialog-inner">
+      <div class="dialog-head">
+        <h2 id="dialog-title">Contoh formulir</h2>
+        <form method="dialog">
+          <button class="icon-close" type="submit" value="cancel" aria-label="Tutup dialog">
+            <svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true" focusable="false">
+              <path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" d="M3 3l10 10M13 3 3 13"/>
+            </svg>
+          </button>
+        </form>
+      </div>
+      <p class="form-note">Formulir ini tidak mengirim data ke mana pun. Aruna Tulis bukan bisnis sungguhan.</p>
+      <form method="dialog" class="form-grid">
+        <label for="nama">Nama
+          <input id="nama" name="nama" type="text" autocomplete="name">
+        </label>
+        <label for="email">Email
+          <input id="email" name="email" type="email" autocomplete="email">
+        </label>
+        <label for="pesan">Pesan
+          <textarea id="pesan" name="pesan"></textarea>
+        </label>
+        <div class="form-actions">
+          <button class="btn btn-ink" type="submit" value="demo">Tutup formulir</button>
+          <button class="btn btn-outline" type="submit" value="cancel">Batal</button>
+        </div>
+      </form>
+    </div>
+  </dialog>
+
+  <script type="module">
+    const header = document.querySelector(".site-header");
+    const menu = document.getElementById("site-menu");
+    const mq = window.matchMedia("(min-width: 52rem)");
+
+    const syncNav = () => {
+      const wide = mq.matches;
+      header.classList.toggle("is-wide", wide);
+      if (wide) menu.removeAttribute("popover");
+      else menu.setAttribute("popover", "auto");
+    };
+
+    mq.addEventListener("change", syncNav);
+    syncNav();
+
+    menu.querySelectorAll("a").forEach((link) => {
+      link.addEventListener("click", () => {
+        if (typeof menu.hidePopover === "function" && menu.matches(":popover-open")) {
+          menu.hidePopover();
+        }
+      });
+    });
+
+    const dialog = document.getElementById("contact-dialog");
+    if (dialog && !("commandForElement" in HTMLButtonElement.prototype)) {
+      document.querySelectorAll('[data-open-dialog="contact-dialog"]').forEach((button) => {
+        button.addEventListener("click", () => dialog.showModal());
+      });
+    }
+  </script>
+</body>
+</html>
